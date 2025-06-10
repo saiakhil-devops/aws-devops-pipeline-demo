@@ -1,10 +1,11 @@
 # AWS DevOps Pipeline Demo
 
-This project demonstrates a simple cloud-native CI/CD pipeline using a python app, containerized with docker and automated with GitHub Actions. It's designed to showcase modern DevOps practices.
+This project showcases a simple python app containerized with docker, illustrating modern Devops practices and automation readiness.
+
+---
 
 ## Tech Stack
-
-- **python 3.13**: Basic "Hello, Devops World!" app
+- **python 3.13**
 - **Docker**: Containerize the python app
 - **GitHub Actions**: Automate build & deploy pipelines
 -**AWS**: For deployment targets
