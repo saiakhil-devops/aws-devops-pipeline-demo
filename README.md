@@ -20,3 +20,16 @@ cd aws-devops-pipeline-demo
 # Run Python app locally
 cd app
 python app.py
+
+----
+
+## Continuous Integration
+
+This project uses **GitHub Actions** to automatically build the docker image on every push to the `main` branch.
+You can see the pipeline in action here: [Actions tab](https://github.com/saiakhil-devops/aws-devops-pipeline-demo/actions).
+
+
+----
+
+**Author**: [Sai Akhil Perumalla]
+**GitHub**: [https://github.com/saiakhil-devops/aws-devops-pipeline-demo](https://github.com/saiakhil-devops/aws-devops-pipeline-demo)
