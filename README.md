@@ -95,7 +95,7 @@ docker run -p 5000:5000 devops-demo
 🔹 AWS Certified | Quality Assurance Engineer | DevOps & Cloud Enthusiast  
 📧 saiakhilperumallaofficial@gmail.com  
 📍 Scarborough, Ontario  
-🔗 [LinkedIn](www.linkedin.com/in/sai-akhil-perumalla-0b473819b) *(update with your link)*
+🔗 [LinkedIn](www.linkedin.com/in/sai-akhil-perumalla-0b473819b)
 
 ---
 
