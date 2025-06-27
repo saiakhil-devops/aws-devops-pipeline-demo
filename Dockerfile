@@ -1,18 +1,20 @@
-# Base image
+# Use official Python image
 FROM python:3.9-slim
 
-# Set working directory inside the container
+# Set working directory
 WORKDIR /app
 
-# Copy application code and requirements
-COPY app/ app/
+# Copy dependency file first for layer caching
 COPY requirements.txt .
 
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Expose the port Flask runs on
-EXPOSE 5000
+# Copy the rest of the project files
+COPY . .
 
-# Command to run the Flask app
-CMD ["python", "app.py"]
+# Set environment variable (optional for Flask-style apps)
+ENV FLASK_APP=app/app.py
+
+# Run the app
+CMD ["python", "app/app.py"]
