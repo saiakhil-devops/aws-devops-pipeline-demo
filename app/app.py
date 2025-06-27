@@ -1,1 +1,4 @@
-print("Hello, DevOps World!")
+# app/app.py
+
+def hello():
+    return "Hello, World!"
