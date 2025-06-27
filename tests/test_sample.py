@@ -1,13 +1,6 @@
-# tests/test_sample.py
+from app.app import app
 
-import unittest
-from app.app import hello
-
-
-class TestApp(unittest.TestCase):
-    def test_hello(self):
-        self.assertEqual(hello(), "Hello, World!")
-
-
-if __name__ == "__main__":
-    unittest.main()
+def test_home():
+    response = app.test_client().get('/')
+    assert response.status_code == 200
+    assert b"Hello from Flask!" in response.data
