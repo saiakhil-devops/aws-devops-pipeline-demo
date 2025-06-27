@@ -132,4 +132,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-> 🔥 *This repository is crafted to align with real-world DevOps job requirements, showcasing hands-on experience with CI/CD pipelines, Dockerization, automated testing, and scalable workflows. Perfect for showcasing in portfolios, internships, or interviews.*
+> 🔥 *This repository is crafted to align with real-world DevOps job requirements, showcasing hands-on experience with CI/CD pipelines, Dockerization, automated testing, and scalable workflows.*
