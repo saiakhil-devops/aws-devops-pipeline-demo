@@ -1,13 +1,10 @@
 import sys
 import os
 
-# Add the app folder to the system path
-sys.path.insert(
-    0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "app"))
-)
+# Add the parent directory to Python path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from app import app  # Now Python can find app.py inside the app folder
-
+from app import app  # <-- this will now work correctly
 
 def test_home():
     response = app.test_client().get("/")
