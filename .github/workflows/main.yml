@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: ⬇️ Checkout Code
+    - name:⬇️ Checkout Code
       uses: actions/checkout@v3
 
     - name: 🐍 Set up Python
@@ -39,3 +39,19 @@ jobs:
         echo "Running tests and generating coverage report..."
         coverage run -m pytest
         coverage report -m
+
+  docker-build:
+    runs-on: ubuntu-latest
+    needs: build-and-test
+
+    steps:
+    - name: ⬇️ Checkout Code
+      uses: actions/checkout@v3
+
+    - name: 🐳 Build Docker image
+      run: |
+        docker build -t aws-devops-demo .
+
+    - name: ✅ Verify Docker image
+      run: |
+        docker images | grep aws-devops-demo
