@@ -13,5 +13,3 @@ def test_home():
     assert response.status_code == 200
     assert b"Hello from Flask!" in response.data
 
-
-
