@@ -1,5 +1,7 @@
 # 🚀 AWS DevOps CI/CD Pipeline Demo
 
+![CodeQL](https://github.com/saiakhil-devops/aws-devops-pipeline-demo/actions/workflows/codeql.yml/badge.svg?branch=main)
+![Trivy](https://github.com/saiakhil-devops/aws-devops-pipeline-demo/actions/workflows/trivy.yml/badge.svg?branch=main)
 [![Build Status](https://github.com/saiakhil-devops/aws-devops-pipeline-demo/actions/workflows/main.yml/badge.svg)](https://github.com/saiakhil-devops/aws-devops-pipeline-demo/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
