@@ -1,0 +1,31 @@
+name: ghcr-push
+on:
+  push: { branches: [ "main" ] }
+  workflow_dispatch:
+
+# This lets the workflow publish to GHCR.
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Log in using the automatic GitHub token (no secrets needed)
+      - name: Log in to GHCR
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+
+      # Build and push both :SHA and :latest tags (lowercase path required by GHCR)
+      - name: Build and push
+        env:
+          IMAGE: ghcr.io/${{ github.repository }}/app
+          TAG: ${{ github.sha }}
+        run: |
+          IMAGE=$(echo "$IMAGE" | tr '[:upper:]' '[:lower:]')
+          docker build -t $IMAGE:$TAG .
+          docker tag $IMAGE:$TAG $IMAGE:latest
+          docker push $IMAGE:$TAG
+          docker push $IMAGE:latest
