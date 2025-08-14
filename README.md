@@ -1,5 +1,6 @@
 # 🚀 AWS DevOps CI/CD Pipeline Demo
 
+![GHCR Push](https://github.com/saiakhil-devops/aws-devops-pipeline-demo/actions/workflows/ghcr-push.yml/badge.svg?branch=main)
 ![CodeQL](https://github.com/saiakhil-devops/aws-devops-pipeline-demo/actions/workflows/codeql.yml/badge.svg?branch=main)
 ![Trivy](https://github.com/saiakhil-devops/aws-devops-pipeline-demo/actions/workflows/trivy.yml/badge.svg?branch=main)
 [![Build Status](https://github.com/saiakhil-devops/aws-devops-pipeline-demo/actions/workflows/main.yml/badge.svg)](https://github.com/saiakhil-devops/aws-devops-pipeline-demo/actions)
@@ -123,7 +124,7 @@ docker run -p 5000:5000 aws-devops-demo
 **Sai Akhil Perumalla**  
 🔹 AWS Certified | DevOps & Cloud Enthusiast | QA Engineer  
 📍 Scarborough, Ontario  
-📧 saiakhilperumalla@gmail.com  
+📧 saiakhilperumallaofficial@gmail.com  
 🔗 [GitHub](https://github.com/saiakhil-devops) | [LinkedIn](https://www.linkedin.com/in/sai-akhil-perumalla-0b473819b)
 
 ---
