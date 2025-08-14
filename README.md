@@ -1,11 +1,15 @@
 # 🚀 AWS DevOps CI/CD Pipeline Demo
 
-![GHCR Push](https://github.com/saiakhil-devops/aws-devops-pipeline-demo/actions/workflows/ghcr-push.yml/badge.svg?branch=main)
-![CodeQL](https://github.com/saiakhil-devops/aws-devops-pipeline-demo/actions/workflows/codeql.yml/badge.svg?branch=main)
-![Trivy](https://github.com/saiakhil-devops/aws-devops-pipeline-demo/actions/workflows/trivy.yml/badge.svg?branch=main)
-[![Build Status](https://github.com/saiakhil-devops/aws-devops-pipeline-demo/actions/workflows/main.yml/badge.svg)](https://github.com/saiakhil-devops/aws-devops-pipeline-demo/actions)
+[![GHCR Push](https://github.com/saiakhil-devops/aws-devops-pipeline-demo/actions/workflows/ghcr-push.yml/badge.svg?branch=main)](https://github.com/saiakhil-devops/aws-devops-pipeline-demo/actions/workflows/ghcr-push.yml)
+[![CodeQL](https://github.com/saiakhil-devops/aws-devops-pipeline-demo/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/saiakhil-devops/aws-devops-pipeline-demo/actions/workflows/codeql.yml)
+[![Trivy](https://github.com/saiakhil-devops/aws-devops-pipeline-demo/actions/workflows/trivy.yml/badge.svg?branch=main)](https://github.com/saiakhil-devops/aws-devops-pipeline-demo/actions/workflows/trivy.yml)
+[![Build Status](https://github.com/saiakhil-devops/aws-devops-pipeline-demo/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/saiakhil-devops/aws-devops-pipeline-demo/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
+
+### Pull the image
+```bash
+docker pull ghcr.io/saiakhil-devops/aws-devops-pipeline-demo/app:latest
 
 A professionally structured DevOps project demonstrating a complete **CI/CD pipeline** using **GitHub Actions**, **Docker**, and **Python**. This repository showcases key DevOps practices including code validation, containerization, automated testing, and deployment readiness — ideal for production and real-world corporate environments.
 
