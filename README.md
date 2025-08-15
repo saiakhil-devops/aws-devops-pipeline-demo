@@ -1,32 +1,52 @@
 # 🚀 AWS DevOps CI/CD Pipeline Demo
 
-[![Build Status](https://github.com/saiakhil-devops/aws-devops-pipeline-demo/actions/workflows/main.yml/badge.svg)](https://github.com/saiakhil-devops/aws-devops-pipeline-demo/actions)
+[![GHCR Push](https://github.com/saiakhil-devops/aws-devops-pipeline-demo/actions/workflows/ghcr-push.yml/badge.svg?branch=main)](https://github.com/saiakhil-devops/aws-devops-pipeline-demo/actions/workflows/ghcr-push.yml)
+[![CodeQL](https://github.com/saiakhil-devops/aws-devops-pipeline-demo/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/saiakhil-devops/aws-devops-pipeline-demo/actions/workflows/codeql.yml)
+[![Trivy](https://github.com/saiakhil-devops/aws-devops-pipeline-demo/actions/workflows/trivy.yml/badge.svg?branch=main)](https://github.com/saiakhil-devops/aws-devops-pipeline-demo/actions/workflows/trivy.yml)
+[![Build Status](https://github.com/saiakhil-devops/aws-devops-pipeline-demo/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/saiakhil-devops/aws-devops-pipeline-demo/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
 
-A professionally structured DevOps project demonstrating a complete **CI/CD pipeline** using **GitHub Actions**, **Docker**, and **Python**. This repository showcases key DevOps practices including code validation, containerization, automated testing, and deployment readiness — ideal for production and real-world corporate environments.
+## Pull the image
 
----
+1. **Authenticate to GHCR (first time only)**  
+   *Skip this if your package is public.* Create a Personal Access Token with `read:packages` and log in:
+   ```bash
+   echo "$GHCR_TOKEN" | docker login ghcr.io -u saiakhil-devops --password-stdin
+   
+    # Latest
+   
+    docker pull ghcr.io/saiakhil-devops/aws-devops-pipeline-demo/app:latest
+
+    # Or a specific version
+   
+    docker pull ghcr.io/saiakhil-devops/aws-devops-pipeline-demo/app:v0.1.0
+    
+    docker run --rm -p 5000:5000 ghcr.io/saiakhil-devops/aws-devops-pipeline-demo/app:latest
+
+A professionally structured DevOps project demonstrating a complete **CI/CD pipeline** using **GitHub Actions**, **Docker**, and **Python**. This repository showcases key DevOps practices including code validation, containerization, automated testing, and deployment readiness — ideal for production and real-world corporate environments.
 
 ## 📁 Project Directory Structure
 
-```
+<details>
+<summary><b>Click to expand</b></summary>
+
+```text
 aws-devops-pipeline-demo/
-│
-├── app/                    # Python web application
-│   └── app.py
-│
-├── tests/                  # Unit test cases
-│   └── test_sample.py
-│
-├── .github/
-│   └── workflows/
-│       └── main.yml        # GitHub Actions workflow
-│
-├── Dockerfile              # Docker image definition
-├── requirements.txt        # Python dependencies
-└── README.md               # Project documentation
+├─ app/                     # Python web application
+│  └─ app.py
+├─ tests/                   # Unit tests
+│  └─ test_sample.py
+├─ .github/
+│  └─ workflows/
+│     ├─ main.yml          # CI build & test
+│     ├─ codeql.yml        # CodeQL static analysis
+│     └─ trivy.yml         # Trivy image scan
+├─ Dockerfile               # Docker image definition
+├─ requirements.txt         # Python dependencies
+└─ README.md                # Project documentation
 ```
+</details> 
 
 ---
 
@@ -121,7 +141,7 @@ docker run -p 5000:5000 aws-devops-demo
 **Sai Akhil Perumalla**  
 🔹 AWS Certified | DevOps & Cloud Enthusiast | QA Engineer  
 📍 Scarborough, Ontario  
-📧 saiakhilperumalla@gmail.com  
+📧 saiakhilperumallaofficial@gmail.com  
 🔗 [GitHub](https://github.com/saiakhil-devops) | [LinkedIn](https://www.linkedin.com/in/sai-akhil-perumalla-0b473819b)
 
 ---
