@@ -148,6 +148,7 @@ docker run -p 5000:5000 aws-devops-demo
 
 ## 📄 License
 
+
 This project is licensed under the [MIT License](LICENSE).
 
 ---
